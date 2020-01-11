@@ -1,7 +1,23 @@
-## Table of Contents
+<div align="center">
+  <h1> 30 Days Of JavaScript</h1>
+  <a class="header-badge" target="_blank" href="https://github.com/Asabeneh/30DaysOfJavaScript">
+  <img alt="GitHub stars" src="https://img.shields.io/github/stars/asabeneh/30DaysOfJavaScript?style=social">
+  </a>
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
+  </a>
+  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  </a>
+
+  <sub>Author:
+  <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+  <small> January, 2020</small>
+  </sub>
+</div>
 
 [<< Day 4](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/04_Day/04_day_conditionals.md) | [Day 6 >>](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/06_Day/06_day_loops.md)
---
+
 ![Day 5](../images/banners/day_1_5.png)
 
 - [📔 Day 5](#%f0%9f%93%94-day-5)
@@ -43,6 +59,7 @@ An array is a collection of different data types which are ordered and changeabl
 ### How to create an empty array
 
 In JavaScript, we can create an array in different ways. Let us different ways to create an array.
+It is very common to use *const* instead of *let* to declare an array variable. If you ar using const it means you do not use that name again.
 
 - Using Array constructor
 
@@ -503,12 +520,20 @@ Slice: To cut out a multiple items in range. It takes two parameters:starting an
 Splice: It takes three parameters:Starting position, number of times to be removed and number of items to be added.
 
 ```js
-  const numbers = [1, 2, 3, 4, 5];
+  const numbers = [1, 2, 3, 4, 5]
 
   console.log(numbers.splice())                // -> remove all items
-  console.log(numbers.splice(0,1))            // remove the first item
-  console.log(numbers.splice(3, 3, 6, 7, 8))  // -> [1,2,6,7,8] //it removes two item and replace three items
 
+```
+
+```js
+  const numbers = [1, 2, 3, 4, 5]
+  console.log(numbers.splice(0,1))            // remove the first item
+```
+
+```js
+  const numbers = [1, 2, 3, 4, 5];
+  console.log(numbers.splice(3, 3, 6, 7, 8))  // -> [1, 2, 3, 6, 7, 8] //it removes two item and replace three items
 ```
 
 #### Adding item to an array using push
@@ -546,7 +571,7 @@ console.log(fruits)   // ['banana', 'orange', 'mango', 'lemon', 'apple', 'lime']
 
 #### Removing the end element using pop
 
-Pop: Removing item in the end.
+pop: Removing item in the end.
 
 ```js
 const numbers = [1, 2, 3, 4, 5]
